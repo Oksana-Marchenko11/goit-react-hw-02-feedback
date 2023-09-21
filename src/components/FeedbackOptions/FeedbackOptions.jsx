@@ -9,3 +9,7 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
     </button>;
   });
 };
+FeedbackOptions.propTypes = {
+  options: PropTypes.array,
+  onLeaveFeedback: PropTypes.func,
+};

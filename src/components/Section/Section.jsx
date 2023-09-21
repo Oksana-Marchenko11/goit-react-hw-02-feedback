@@ -10,3 +10,6 @@ export const Section = ({ title, children }) => {
     </div>
   );
 };
+Section.propTypes = {
+  title: PropTypes.string,
+};
