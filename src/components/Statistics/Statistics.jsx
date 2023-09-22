@@ -4,12 +4,12 @@ import css from './Statistics.module.css';
 
 export const Statistics = ({ good, neutral, bad, total, positive }) => {
   return (
-    <ul>
-      <li className={css.stat}>Good: {good}</li>
-      <li>Neutral: {neutral}</li>
-      <li>Bad: {bad}</li>
-      <li>Total: {total}</li>
-      <li>Positive Feedback: {positive}</li>
+    <ul className={css.stat}>
+      <li className={css.stat_item}>Good: {good}</li>
+      <li className={css.stat_item}>Neutral: {neutral}</li>
+      <li className={css.stat_item}>Bad: {bad}</li>
+      <li className={css.stat_item}>Total: {total}</li>
+      <li className={css.stat_item}>Positive Feedback: {positive} %</li>
     </ul>
   );
 };
